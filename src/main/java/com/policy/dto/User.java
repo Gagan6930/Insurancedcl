@@ -1,6 +1,6 @@
 package com.policy.dto;
 
-public class Users {
+public class User {
 	private Integer user_id;
 	private String full_name;
 	private String email;

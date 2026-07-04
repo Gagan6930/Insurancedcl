@@ -1,6 +1,6 @@
 package com.policy.dto;
 
-public class Purchases {
+public class Purchase {
 	private Integer purchase_id;
 	private Integer user_id;
 	private Integer policy_id;
