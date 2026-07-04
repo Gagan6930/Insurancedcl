@@ -8,23 +8,7 @@ CREATE TABLE users (
     role ENUM('ADMIN','CUSTOMER') NOT NULL DEFAULT 'CUSTOMER',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-desc users;
-CREATE TABLE customer_profiles (
-    profile_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL UNIQUE,
-    gender ENUM('Male','Female','Other'),
-    date_of_birth DATE,
-    occupation VARCHAR(100),
-    annual_income DECIMAL(12,2),
-    address VARCHAR(255),
-    city VARCHAR(50),
-    state VARCHAR(50),
-    pincode VARCHAR(10),
 
-    FOREIGN KEY (user_id)
-    REFERENCES users(user_id)
-    ON DELETE CASCADE
-);
 CREATE TABLE policy_categories (
     category_id INT AUTO_INCREMENT PRIMARY KEY,
     category_name VARCHAR(50) NOT NULL UNIQUE,
