@@ -1,6 +1,13 @@
 package com.policy.dto;
 
 public class Policie {
+	@Override
+	public String toString() {
+		return "Policie [policy_id=" + policy_id + ", category_id=" + category_id + ", policy_name=" + policy_name
+				+ ", premium_amount=" + premium_amount + ", coveage_amount=" + coveage_amount + ", duration_months="
+				+ duration_months + ", description=" + description + ", status=" + status + "]";
+	}
+
 	private Integer policy_id;
 	private Integer category_id;
 	private String policy_name;

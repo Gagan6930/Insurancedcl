@@ -61,5 +61,6 @@ public class User {
 		return "Users [user_id=" + user_id + ", full_name=" + full_name + ", email=" + email + ", password=" + password
 				+ ", role=" + role + ", created_at=" + created_at + "]";
 	}
+	
 
 }

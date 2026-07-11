@@ -56,4 +56,10 @@ public class Purchase {
 		this.status = status;
 	}
 
+	@Override
+	public String toString() {
+		return "Purchase [purchase_id=" + purchase_id + ", user_id=" + user_id + ", policy_id=" + policy_id
+				+ ", purchase_date=" + purchase_date + ", expiry_date=" + expiry_date + ", status=" + status + "]";
+	}
+
 }

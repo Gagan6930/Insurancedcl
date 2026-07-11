@@ -29,4 +29,10 @@ public class Policy_Categorie {
 		this.description = description;
 	}
 
+	@Override
+	public String toString() {
+		return "Policy_Categorie [category_id=" + category_id + ", category_name=" + category_name + ", description="
+				+ description + "]";
+	}
+
 }
